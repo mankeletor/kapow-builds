@@ -3,12 +3,9 @@ Most mined kawpaw coins builds for linux (deb/ubuntu and based distros)
 
 # Available scripts
 
-#meowcoin
-
+#meowcoin 
 #neoxa
-
 #clore
-
 #paprikacoin
 
 # Linux wallet releases didn't worked
