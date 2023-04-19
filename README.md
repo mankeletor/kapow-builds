@@ -1,7 +1,7 @@
 # kapow-builds
 Most mined kawpaw coins builds for linux (deb/ubuntu and based distros)
 
-#Available scripts
+# Available scripts
 meowcoin
 neoxa
 clore
