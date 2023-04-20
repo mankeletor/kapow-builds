@@ -97,7 +97,8 @@ Terminal=false
 Exec=/usr/local/bin/clore-qt
 Name=clorecoin
 Comment= clore coin wallet
-Icon=/usr/share/icons/clore128.png
+Icon=clore128.png
+Categories=Network;Finance;
 ' > ./usr/share/applications/clorecoin.desktop
 
 find -type d -name 'man' -exec find {} -type f \; | while read line; do gzip -9 $line; done

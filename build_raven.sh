@@ -324,7 +324,7 @@ Terminal=false
 Type=Application
 Icon=raven128.png
 MimeType=x-scheme-handler/raven;
-Categories=Office;Finance;
+Categories=Network;Finance;
 ' > ./usr/share/applications/meowcoincoin.desktop
 
 find -type d -name 'man' -exec find {} -type f \; | while read line; do gzip -9 $line; done

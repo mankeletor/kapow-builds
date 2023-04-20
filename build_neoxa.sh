@@ -97,7 +97,8 @@ Terminal=false
 Exec=/usr/bin/neoxa-qt
 Name=neoxacoin
 Comment= neoxa coin wallet
-Icon=/usr/share/icons/neoxa128.png
+Icon=neoxa128.png
+Categories=Network;Finance;
 ' > ./usr/share/applications/neoxacoin.desktop
 find -type d -name 'man' -exec find {} -type f \; | while read line; do gzip -9 $line; done
 find -type f | xargs file | grep -e "executable" -e "shared object" | grep ELF \

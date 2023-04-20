@@ -97,7 +97,8 @@ Terminal=false
 Exec=/usr/bin/paprikacoin-qt
 Name=paprikacoincoin
 Comment= paprikacoin coin wallet
-Icon=/usr/share/icons/paprikacoin.png
+Icon=paprikacoin.png
+Categories=Network;Finance;
 ' > ./usr/share/applications/paprikacoincoin.desktop
 
 find -type d -name 'man' -exec find {} -type f \; | while read line; do gzip -9 $line; done

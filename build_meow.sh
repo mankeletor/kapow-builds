@@ -97,7 +97,8 @@ Terminal=false
 Exec=/usr/local/bin/meowcoin-qt
 Name=meowcoincoin
 Comment= meowcoin coin wallet
-Icon=/usr/share/icons/meowcoin128.png
+Icon=meowcoin128.png
+Categories=Network;Finance;
 ' > ./usr/share/applications/meowcoincoin.desktop
 
 find -type d -name 'man' -exec find {} -type f \; | while read line; do gzip -9 $line; done
