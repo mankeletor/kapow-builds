@@ -10,7 +10,9 @@ cyan='\033[0;36m'
 fin_color='\033[0m'
 
 NEOXA_ROOT=$(pwd)
-
+NAME="neoxa"
+VERSION=$(head -1 release-linux.sh | cut -d= -f2)
+PKG=$NAME-$VERSION
 
 echo -ne "${azul}In order to build deb binary package I'll need your sudo pass: "
 read -s PASS
