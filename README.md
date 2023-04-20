@@ -1,5 +1,5 @@
-# kapow-builds
-Most mined kawpaw coins builds for linux (deb/ubuntu and based distros)
+# kawpow-builds
+These are the most mined kawpaw coins builds for linux (deb/ubuntu and based distros)
 
 # Available scripts
 
