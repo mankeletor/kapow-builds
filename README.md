@@ -57,3 +57,7 @@ chmod 755 build_script.sh
 When it done a debian package should be created on tmp-destdir/<packagename>.deb
 
 You should ignore the alien warning "file not found"
+
+# Got Slack?
+
+With some mods you can turn this build scripts into SlackBuilds, Why? I took some helps from slackbuilds cos Pat did it very right from beginning!
