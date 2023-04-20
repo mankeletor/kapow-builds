@@ -46,17 +46,17 @@ get the <source_tarball>.tar.gz
 
 tar xf <sorce_tarball>.tar.gz
 
-copy the build script on <source_tarball>
+copy the build script on uncompressed <source_tarball_dir>
 
-cd <source_tarball>
+cd <source_tarball_dir>
 
 chmod 755 build_script.sh
 
-./build_scrit.sh
+./build_script.sh
 
-When it done a debian package should be created on tmp-destdir/<packagename>.deb
+If everything goes right a debian package should be created on tmp-destdir/<packagename>.deb
 
-You should ignore the alien warning "file not found"
+Ignore the alien warning "file not found"
 
 # Got Slack?
 
