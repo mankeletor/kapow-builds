@@ -84,7 +84,7 @@ echo -e "${amarillo}=======Building package=======${fin_color}"
 cd $NEOXA_ROOT/tmp-destdir
 mkdir -p ./usr/share/applications
 mkdir -p ./usr/share/icons
-cp ../Neoxacoin_small.png ./usr/share/icons/NEOXACOIN_small.png
+cp ../share/pixmaps/neoxa128.png ./usr/share/icons/
 echo '
 #!/usr/bin/env xdg-open
 
@@ -95,7 +95,7 @@ Terminal=false
 Exec=/usr/bin/neoxa-qt
 Name=neoxacoin
 Comment= neoxa coin wallet
-Icon=/usr/share/icons/NEOXACOIN_small.png
+Icon=/usr/share/icons/neoxa128.png
 ' > ./usr/share/applications/neoxacoin.desktop
 find -type d -name 'man' -exec find {} -type f \; | while read line; do gzip -9 $line; done
 find -type f | xargs file | grep -e "executable" -e "shared object" | grep ELF \

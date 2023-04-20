@@ -86,7 +86,7 @@ echo -e "${amarillo}=======Building package=======${fin_color}"
 cd $CLORE_ROOT/tmp-destdir
 mkdir -p ./usr/share/applications
 mkdir -p ./usr/share/icons
-cp ../share/pixmaps/clore32.png ./usr/share/icons/CLORECOIN_small.png
+cp ../share/pixmaps/clore128.png ./usr/share/icons/
 echo '
 #!/usr/bin/env xdg-open
 
@@ -97,7 +97,7 @@ Terminal=false
 Exec=/usr/local/bin/clore-qt
 Name=clorecoin
 Comment= clore coin wallet
-Icon=/usr/share/icons/CLORECOIN_small.png
+Icon=/usr/share/icons/clore128.png
 ' > ./usr/share/applications/clorecoin.desktop
 
 find -type d -name 'man' -exec find {} -type f \; | while read line; do gzip -9 $line; done

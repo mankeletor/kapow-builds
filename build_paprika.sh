@@ -86,7 +86,7 @@ echo -e "${amarillo}=======Building package=======${fin_color}"
 cd $PAPRIKA_ROOT/tmp-destdir
 mkdir -p ./usr/share/applications
 mkdir -p ./usr/share/icons
-cp ../share/pixmaps/paprikacoin32.png ./usr/share/icons/PAPRIKACOIN_small.png
+cp ../share/pixmaps/paprikacoin128.png ./usr/share/icons/
 echo '
 #!/usr/bin/env xdg-open
 
@@ -97,7 +97,7 @@ Terminal=false
 Exec=/usr/bin/paprikacoin-qt
 Name=paprikacoincoin
 Comment= paprikacoin coin wallet
-Icon=/usr/share/icons/PAPRIKACOIN_small.png
+Icon=/usr/share/icons/paprikacoin128.png
 ' > ./usr/share/applications/paprikacoincoin.desktop
 
 find -type d -name 'man' -exec find {} -type f \; | while read line; do gzip -9 $line; done

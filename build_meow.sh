@@ -86,7 +86,7 @@ echo -e "${amarillo}=======Building package=======${fin_color}"
 cd $MEOWCOIN_ROOT/tmp-destdir
 mkdir -p ./usr/share/applications
 mkdir -p ./usr/share/icons
-cp ../share/pixmaps/meowcoin32.png ./usr/share/icons/MEOWCOINCOIN_small.png
+cp ../share/pixmaps/meowcoin128.png ./usr/share/icons/
 echo '
 #!/usr/bin/env xdg-open
 
@@ -97,7 +97,7 @@ Terminal=false
 Exec=/usr/local/bin/meowcoin-qt
 Name=meowcoincoin
 Comment= meowcoin coin wallet
-Icon=/usr/share/icons/MEOWCOINCOIN_small.png
+Icon=/usr/share/icons/meowcoin128.png
 ' > ./usr/share/applications/meowcoincoin.desktop
 
 find -type d -name 'man' -exec find {} -type f \; | while read line; do gzip -9 $line; done
