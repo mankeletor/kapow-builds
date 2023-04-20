@@ -56,4 +56,4 @@ chmod 755 build_script.sh
 
 When it done a debian package should be created on tmp-destdir/<packagename>.deb
 
-You could ignore the alien warning "package not found"
+You should ignore the alien warning "file not found"
