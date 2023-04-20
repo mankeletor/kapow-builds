@@ -86,7 +86,7 @@ echo -e "${amarillo}=======Building package=======${fin_color}"
 cd $PAPRIKA_ROOT/tmp-destdir
 mkdir -p ./usr/share/applications
 mkdir -p ./usr/share/icons
-cp .././doc/paprikacoin_logo_doxygen.png ./usr/share/icons/paprikacoin.png
+cp ../doc/paprikacoin_logo_doxygen.png ./usr/share/icons/paprikacoin.png
 echo '
 #!/usr/bin/env xdg-open
 
