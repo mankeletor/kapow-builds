@@ -16,7 +16,15 @@ Anyway this is easy to fix once you got https://github.com/RavenProject/Ravencoi
 
 tar xf raven-4.6.1-7864c39c2-x86_64-linux-gnu.tar.gz; cd raven-4.6.1-7864c39c2
 
-mkdir usr; mv * usr; tar cf raven-4.6.1.tar ./
+mkdir usr; mv * usr; 
+
+find -type d -name 'man' -exec find {} -type f \; | while read line; do gzip -9 $line; done
+
+find -type f | xargs file | grep -e "executable" -e "shared object" | grep ELF \
+
+  | cut -f 1 -d : | xargs strip --strip-unneeded 2> /dev/null
+
+tar cf raven-4.6.1.tar ./
 
 alien raven-4.6.1.tar raven-4.6.1.deb
 
