@@ -8,7 +8,18 @@ Most mined kawpaw coins builds for linux (deb/ubuntu and based distros)
 #clore
 #paprikacoin
 
-#ravencoin is next to release. Ravencoin guys did it right with binary realease but still no deb package
+# Ravencoin build is next to release. 
+
+Ravencoin guys did it right with binary realease but still no deb package.
+
+Anyway this is easy to fix once you got https://github.com/RavenProject/Ravencoin/releases/download/v4.6.1/raven-4.6.1-7864c39c2-x86_64-linux-gnu.tar.gz
+
+tar xf raven-4.6.1-7864c39c2-x86_64-linux-gnu.tar.gz; cd raven-4.6.1-7864c39c2
+
+mkdir usr; mv * usr; tar cf raven-4.6.1.tar ./
+
+alien raven-4.6.1.tar raven-4.6.1.deb
+
 
 # Linux wallet releases doesn't worked
 
