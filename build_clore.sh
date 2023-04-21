@@ -11,7 +11,7 @@ fin_color='\033[0m'
 
 CLORE_ROOT=$(pwd)
 NAME="clore"
-VERSION=$(head -1 release-linux.sh | cut -d= -f2)
+VERSION="4.4.4"
 PKG=$NAME-$VERSION
 
 echo -ne "${azul}In order to build deb binary package I'll need your sudo pass: "
